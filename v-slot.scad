@@ -1,4 +1,4 @@
-include <v-slot-parameters.scad>;
+include <parameters.scad>;
 
 // Draws a 2D shape of a v-slot aluminium extrusion.
 // * fit (default: 0) - optionally extends the v-slot's outer edges by given value.
