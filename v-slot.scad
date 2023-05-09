@@ -35,14 +35,17 @@ module v_slot_2d (fit = 0) {
   }
 }
 
+// Draws a 3D shape of a v-slot aluminium extrusion with height of `h`.
 module v_slot (h, fit = 0) {
   linear_extrude(h) v_slot_2d(fit);
 }
 
+// Draws a 2D clearance for a v-slot with a given `fit` value.
 module v_slot_2d_clearance (fit = 0) {
   hull() v_slot_2d(fit);
 }
 
+// Draws a 3D clearance of `h` height for a v-slot with a given `fit` value.
 module v_slot_clearance (h, fit = 0) {
   linear_extrude(h) v_slot_2d_clearance(fit);
 }
